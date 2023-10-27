@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.118.2">
-    <title>Admin User - Codeigniter E-Commerce</title>
+    <title>Admin User Form - Codeigniter E-Commerce</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
 
@@ -135,76 +135,52 @@
     <div class="col-md-10 mx-auto">
       <div class="card">
         <div class="card-header">
-          <span>Pengguna</span>
-          <a href="/admin-users-form.html" class="btn btn-sm btn-secondary">Tambah</a>
-
-          <div class="float-right">
-            <form action="#">
-                <div class="input-group">
-                    <input type="text" class="form-control form-control-sm text-center" placeholder="cari">
-                    <div class="input-group-append">
-                        <button class="btn btn-secondary btn-sm" type="submit">
-                            <i class="fas fa-search"></i>
-                        </button>
-                        <a href="#" class="btn btn-secondary btn-sm">
-                            <i class="fas fa-eraser"></i>
-                        </a>
-                    </div>
-                </div>
-            </form>
-          </div>
+          <span>Tambah Pengguna</span>
         </div>
         <div class="card-body">
-          <table class="table">
-            <thead>
-                <tr>
-                    <th class="col">#</th>
-                    <th class="col">Pengguna</th>
-                    <th class="col">E-Mail</th>
-                    <th class="col">Role</th>
-                    <th class="col">Status</th>
-                    <th class="col"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>
-                        <p>
-                            <img src="https://placehold.co/70x70" alt="">
-                            Admin
-                        </p>
-                    </td>
-                    <td>admin@gmail.com</td>
-                    <td>Admin</td>
-                    <td>Aktif</td>
-                    <td>
-                        <form action="#">
-                            <a href="#">
-                                <button class="btn btn-sm">
-                                    <i class="fas fa-edit text-bg-info"></i> edit
-                                </button>
-                            </a>
-                            <button class="btn btn-sm" type="submit" onclick="return confirm('Are You Sure?')">
-                                <i class="fas fa-trash-alt text-bg-danger"></i> delete
-                            </button>
-                        </form>                        
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-          </nav> 
-          
-      </div>
+            <form action="">
+                <label for="">Nama</label>
+                <input type="text" class="form-control" required autofocus>
+                <small class="form-text text-danger">Nama Harus Diisi.</small>
+              </div>
+              <div class="card-body">
+                <label for="">E-Mail</label>
+                <input type="email" class="form-control" required autofocus>
+                <small class="form-text text-danger">E-Mail Harus Diisi.</small>
+              </div>
+              <div class="card-body">
+                <label for="">Password</label>
+                <input type="password" class="form-control" required>
+                <small class="form-text text-danger">Password Harus Diisi.</small>
+              </div>
+              <div class="form-group">
+                <label for="">Role</label>
+                <select name="role" id="" class="form-control">
+                    <option value="admin">Admin</option>
+                    <option value="member">Member</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="">Status</label>
+                <br>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="status" class="form-check-input" value="1">
+                    <label for="" class="form-check-label">Aktif</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="status" class="form-check-input" value="1">
+                    <label for="" class="form-check-label">Non-Aktif</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">Photo</label>
+                <br>
+                <input type="file" name="photo" id="">
+              </div>
+              <br>
+              <button type="submit" class="btn btn-primary">Tambah Pengguna</button>
+            </form>
+        </div>
     </div>
   </div>
 
