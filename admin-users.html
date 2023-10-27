@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.118.2">
-    <title>CIShop - Codeigniter E-Commerce</title>
+    <title>Admin User - Codeigniter E-Commerce</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
 
@@ -103,7 +103,6 @@
               <a href="/admin-category.html" class="dropdown-item">Kategori</a>
               <a href="/admin-product.html" class="dropdown-item">Produk</a>
               <a href="/admin-order.html" class="dropdown-item">Order</a>
-              <a href="/admin-users.html" class="dropdown-item">Pengguna</a>
             </div>
           </li>
         </ul>
@@ -133,146 +132,67 @@
 
 <main role="main" class="container">
   <div class="row">
-    <div class="col-md-9">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="card mb-3">
-            <div class="card-body">
-              <span>Kategori : <strong>Semua Kategori</strong></span>    
-              <span class="float-right">Urutkan harga : <a href="#" class="badge text-bg-primary">Termurah</a> | <a href="#" class="badge text-bg-primary">Termahal</a></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card mb-3">
-            <img src="https://placehold.co/100x70" alt="" class="card-img-top">
-            <div class="body mb-2">
-              <h5 class="card-title">Product Title</h5>
-              <p class="card-text"><strong>Rp.100.000,-</strong></p>
-              <p class="card-text">Some quick example text to build product card.</p>
-              <a href="#" class="badge text-bg-primary"><i class="fas fa-tags"></i> Category</a>
-            </div>
-            <div class="card-footer">
-              <form action="">
+    <div class="col-md-10 mx-auto">
+      <div class="card">
+        <div class="card-header">
+          <span>Pengguna</span>
+          <a href="/admin-users-form.html" class="btn btn-sm btn-secondary">Tambah</a>
+
+          <div class="float-right">
+            <form action="#">
                 <div class="input-group">
-                  <input type="number" class="form-control">
-                  <div class="input-group-append">
-                    <button class="btn btn-primary">Add to Cart</button>
-                  </div>
+                    <input type="text" class="form-control form-control-sm text-center" placeholder="cari">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary btn-sm" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <a href="#" class="btn btn-secondary btn-sm">
+                            <i class="fas fa-eraser"></i>
+                        </a>
+                    </div>
                 </div>
-              </form>
-            </div>
+            </form>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card mb-3">
-            <img src="https://placehold.co/100x70" alt="" class="card-img-top">
-            <div class="body mb-2">
-              <h5 class="card-title">Product Title</h5>
-              <p class="card-text"><strong>Rp.100.000,-</strong></p>
-              <p class="card-text">Some quick example text to build product card.</p>
-              <a href="#" class="badge text-bg-primary"><i class="fas fa-tags"></i> Category</a>
-            </div>
-            <div class="card-footer">
-              <form action="">
-                <div class="input-group">
-                  <input type="number" class="form-control">
-                  <div class="input-group-append">
-                    <button class="btn btn-primary">Add to Cart</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card mb-3">
-            <img src="https://placehold.co/100x70" alt="" class="card-img-top">
-            <div class="body mb-2">
-              <h5 class="card-title">Product Title</h5>
-              <p class="card-text"><strong>Rp.100.000,-</strong></p>
-              <p class="card-text">Some quick example text to build product card.</p>
-              <a href="#" class="badge text-bg-primary"><i class="fas fa-tags"></i> Category</a>
-            </div>
-            <div class="card-footer">
-              <form action="">
-                <div class="input-group">
-                  <input type="number" class="form-control">
-                  <div class="input-group-append">
-                    <button class="btn btn-primary">Add to Cart</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card mb-3">
-            <img src="https://placehold.co/100x70" alt="" class="card-img-top">
-            <div class="body mb-2">
-              <h5 class="card-title">Product Title</h5>
-              <p class="card-text"><strong>Rp.100.000,-</strong></p>
-              <p class="card-text">Some quick example text to build product card.</p>
-              <a href="#" class="badge text-bg-primary"><i class="fas fa-tags"></i> Category</a>
-            </div>
-            <div class="card-footer">
-              <form action="">
-                <div class="input-group">
-                  <input type="number" class="form-control">
-                  <div class="input-group-append">
-                    <button class="btn btn-primary">Add to Cart</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
-      </nav> 
-    </div>    
-    <div class="col-md-3">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="card mb-3">
-            <div class="card-header">
-              Pencarian
-            </div>
-            <div class="card-body">
-              <form action="">
-                <div class="input-group">
-                  <input type="text" class="form-control">
-                  <div class="input-group-append">
-                    <button class="btn btn-primary">Cari</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="card mb-3">
-            <div class="card-header">
-              Kategori
-            </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Semua Kategori</li>
-                <li class="list-group-item">Kategori 1</li>
-                <li class="list-group-item">Kategori 2</li>
-              </ul>              
-          </div>
-        </div>
+        <div class="card-body">
+          <table class="table">
+            <thead>
+                <tr>
+                    <th class="col">#</th>
+                    <th class="col">Pengguna</th>
+                    <th class="col">E-Mail</th>
+                    <th class="col">Role</th>
+                    <th class="col">Status</th>
+                    <th class="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <p>
+                            <img src="https://placehold.co/70x70" alt="">
+                            Admin
+                        </p>
+                    </td>
+                    <td>admin@gmail.com</td>
+                    <td>Admin</td>
+                    <td>Aktif</td>
+                    <td>
+                        <form action="#">
+                            <a href="#">
+                                <button class="btn btn-sm">
+                                    <i class="fas fa-edit text-bg-info"></i> edit
+                                </button>
+                            </a>
+                            <button class="btn btn-sm" type="submit" onclick="return confirm('Are You Sure?')">
+                                <i class="fas fa-trash-alt text-bg-danger"></i> delete
+                            </button>
+                        </form>                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
       </div>
     </div>
   </div>
