@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.118.2">
-    <title>Admin Product - Codeigniter E-Commerce</title>
+    <title>Admin Order Detail - Codeigniter E-Commerce</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
 
@@ -133,85 +133,85 @@
 <main role="main" class="container">
   <div class="row">
     <div class="col-md-10 mx-auto">
-      <div class="card">
-        <div class="card-header">
-          <span>Produk</span>
-          <a href="/admin-product-form.html" class="btn btn-sm btn-secondary">Tambah</a>
-
-          <div class="float-right">
-            <form action="#">
-                <div class="input-group">
-                    <input type="text" class="form-control form-control-sm text-center" placeholder="cari">
-                    <div class="input-group-append">
-                        <button class="btn btn-secondary btn-sm" type="submit">
-                            <i class="fas fa-search"></i>
-                        </button>
-                        <a href="#" class="btn btn-secondary btn-sm">
-                            <i class="fas fa-eraser"></i>
-                        </a>
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                      Detail Order #012341234
+                      <div class="float-right">
+                        <span class="badge badge-pill text-bg-primary">Menunggu Pembayaran</span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Nama : Nama Penerima</p>
+                        <p>Telepon : 0213546879</p>
+                        <p>Alamat : Jl. Sesama, No. 50</p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Produk</th>
+                                    <th class="text-center">Harga</th>
+                                    <th class="text-center">Jumlah</th>
+                                    <th class="text-center">Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p><img src="https://placehold.co/50x50" alt=""><strong>Produk Title</strong></p>
+                                    </td>
+                                    <td class="text-center">Rp.100.000,-</td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">Rp.100.000,-</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><strong>Total :</strong></td>
+                                    <td class="text-center"><strong>Rp.100.000,-</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer">
+                        <form action="#">
+                            <div class="input-group">
+                                <select name="" id="" class="form-control">
+                                    <option value="waiting">Menunggu Pembayaran</option>
+                                    <option value="paid">Dibayar</option>
+                                    <option value="deliverd">Dikirim</option>
+                                    <option value="cancel">Batal</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button class="btn text-bg-primary" type="submit">Simpan</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </form>
-          </div>
+            </div>
         </div>
-        <div class="card-body">
-          <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Produk</th>
-                    <th scope="col">Kategori</th>
-                    <th scope="col">Harga</th>
-                    <th scope="col">Stock</th>
-                    <th scope="col"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>
-                        <p>
-                            <img src="https://placehold.co/70x70" alt="">
-                            Laptops Core i9 2023
-                        </p>
-                    </td>
-                    <td>
-                        <span class="badge text-bg-primary"><i class="fas fa-tags"></i> Laptops</span>
-                    </td>
-                    <td>Rp.13.000.000,-</td>
-                    <td>Tersedia</td>
-                    <td>
-                        <form action="#">
-                            <a href="#">
-                                <button class="btn btn-sm">
-                                    <i class="fas fa-edit text-bg-info"></i> edit
-                                </button>
-                            </a>
-                            <button class="btn btn-sm" type="submit" onclick="return confirm('Are You Sure?')">
-                                <i class="fas fa-trash-alt text-bg-danger"></i> delete
-                            </button>
-                        </form>                        
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-          </nav> 
-          
-      </div>
+        <div class="row mb-3">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        Bukti Transfer
+                    </div>
+                    <div class="card-body">
+                        <p>Dari Rekening : 058623564</p>
+                        <p>Atas Nama : Hakim</p>
+                        <p>Nominal : Rp.900.000</p>
+                        <p>Catatan : -</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="https://placehold.co/150x200" alt="" srcset="">
+            </div>
+        </div>
     </div>
   </div>
-
 </main>
 <script src="/assets/libs/jquery/jquery-3.7.1.min.js"></script>
 <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
+
+    </body>
 </html>
